@@ -1,0 +1,36 @@
+.row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+h1 {
+  font-family: "Permanent Marker", cursive;
+  color: rgba(226, 115, 24, 0.897);
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.wrapper {
+  width: 100%;
+  padding: 2.5rem;
+  height: 100%;
+}
+.col2 {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.centered {
+  text-align: center;
+}
+.bg-image {
+  background-image: url(../images/piece-of-paper.png);
+  width: 45%;
+  height: 42rem;
+  background-size: cover;
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+  display: inline-block;
+}
+.smaller {
+  padding: 7rem;
+}
