@@ -4,7 +4,7 @@ input[type="number"] {
   border: none;
   font-family: "Patrick Hand", cursive;
   font-size: 1.2rem;
-  color: rgb(3, 3, 99);
+  color: rgba(56, 55, 56, 0.849);
 }
 select {
   background-color: transparent;
@@ -13,7 +13,7 @@ select {
   margin-right: 2rem;
   font-family: "Patrick Hand", cursive;
   font-size: 1.2rem;
-  color: rgb(3, 3, 99);
+  color: rgba(56, 55, 56, 0.849);
 }
 select option {
   background-color: transparent;
