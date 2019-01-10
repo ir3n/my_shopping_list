@@ -3,13 +3,27 @@ import ListItem from "./ListItem";
 import "./List.css";
 
 const List = ({ groceries }) => {
+  const onDeleteBtnClick = e => {
+    const item = e.target.parentElement.value;
+    let newGroceries = [...groceries];
+    let index = newGroceries.indexOf(item);
+    if (index !== -1) {
+      newGroceries.splice(index, 1);
+    }
+    console.log(newGroceries);
+    return newGroceries;
+  };
   const groceriesList = groceries.map(item => {
     return (
       <div key={item}>
         <span className="inline">
           <ListItem groceries={groceries} item={item} />
         </span>
-        <button className="small-btn delete-btn">
+        <button
+          value={item}
+          onClick={onDeleteBtnClick}
+          className="small-btn delete-btn"
+        >
           <i className="delete icon ion-md-close" />
         </button>
         <button className="small-btn check-btn">

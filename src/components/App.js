@@ -9,6 +9,9 @@ class App extends Component {
   onTermSubmit = term => {
     this.setState({ groceries: [...this.state.groceries, term] });
   };
+  onDeleteBtnClick = newGroceries => {
+    console.log(newGroceries);
+  };
 
   render() {
     console.log(this.state);
@@ -31,7 +34,10 @@ class App extends Component {
         </div>
         <div className="col2 bg-image">
           <div className="wrapper smaller">
-            <List groceries={this.state.groceries} />
+            <List
+              groceries={this.state.groceries}
+              onDeleteBtnClick={this.onDeleteBtnClick}
+            />
           </div>
         </div>
       </div>
