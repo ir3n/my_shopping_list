@@ -20,6 +20,10 @@ class App extends Component {
           </div>
           <div className="wrapper centered">
             <SearchBar onSubmit={this.onTermSubmit} />
+            <div className="notes">
+              <label>NOTES</label>
+              <textarea maxLength="138" />
+            </div>
           </div>
         </div>
         <div className="col2 bg-image">

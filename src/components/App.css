@@ -34,3 +34,30 @@ h1 {
 .smaller {
   padding: 7rem;
 }
+.notes {
+  background-image: url(../images/post-it.png);
+  background-size: cover;
+  margin-left: 5rem;
+  margin-top: 4rem;
+  height: 27rem;
+  width: 27rem;
+}
+textarea {
+  width: 13rem;
+  height: 9.5rem;
+  padding: 1rem;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: rgb(3, 3, 99);
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+label {
+  display: block;
+  padding: 6rem 0 0 7rem;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+}

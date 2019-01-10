@@ -21,7 +21,7 @@ class SearchBar extends Component {
           required
         />
         <button>
-          <i class="icon ion-md-arrow-round-forward" />
+          <i className="icon ion-md-arrow-round-forward" />
         </button>
       </form>
     );
