@@ -5,12 +5,16 @@ import "./List.css";
 const List = ({ groceries }) => {
   const groceriesList = groceries.map(item => {
     return (
-      <div>
-        <ListItem
-          key={groceries.indexOf(item)}
-          groceries={groceries}
-          item={item}
-        />
+      <div key={item}>
+        <span className="inline">
+          <ListItem groceries={groceries} item={item} />
+        </span>
+        <button className="small-btn delete-btn">
+          <i className="delete icon ion-md-close" />
+        </button>
+        <button className="small-btn check-btn">
+          <i className="check icon ion-md-checkmark" />
+        </button>
       </div>
     );
   });

@@ -7,20 +7,18 @@ input[type="text"] {
   margin-right: 1rem;
   padding-left: 1rem;
 }
-button {
-  border-radius: 50%;
+.form-button {
   width: 2.5rem;
   height: 2.5rem;
-  border: none;
   background-color: rgb(255, 68, 0);
-  cursor: pointer;
   transition: background-color 0.3s;
 }
-button:hover {
+.form-button:hover {
   background-color: rgb(214, 61, 5);
 }
 
 .icon {
   font-size: 1.5rem;
   color: white;
+  z-index: 4;
 }

@@ -6,3 +6,27 @@
   color: rgba(71, 65, 65, 0.801);
   margin-left: 5.5rem;
 }
+.inline {
+  display: inline-block;
+}
+.check {
+  color: green;
+}
+.delete {
+  color: red;
+}
+.small-btn {
+  position: fixed;
+  transition: transform 0.3s;
+}
+.small-btn:hover {
+  transform: scale(1.2);
+}
+
+.delete-btn {
+  right: 13.5rem;
+}
+
+.check-btn {
+  right: 10.7rem;
+}

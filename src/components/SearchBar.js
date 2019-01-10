@@ -6,8 +6,15 @@ class SearchBar extends Component {
 
   onTermSubmit = event => {
     event.preventDefault();
-    this.props.onSubmit(this.state.term);
+    this.checkInput(this.state.term);
     this.setState({ term: "" });
+  };
+  checkInput = term => {
+    if (this.props.groceries.includes(term)) {
+      alert(`You have already added ${term} in your shopping list.`);
+    } else {
+      this.props.onSubmit(this.state.term);
+    }
   };
 
   render() {
@@ -20,7 +27,7 @@ class SearchBar extends Component {
           placeholder="I need..."
           required
         />
-        <button>
+        <button className="form-button">
           <i className="icon ion-md-arrow-round-forward" />
         </button>
       </form>

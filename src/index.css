@@ -7,3 +7,9 @@
   font-size: 1.5rem;
   color: rgb(3, 3, 99);
 }
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+}

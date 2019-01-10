@@ -19,7 +19,10 @@ class App extends Component {
             <h1>My Shopping List</h1>
           </div>
           <div className="wrapper centered">
-            <SearchBar onSubmit={this.onTermSubmit} />
+            <SearchBar
+              onSubmit={this.onTermSubmit}
+              groceries={this.state.groceries}
+            />
             <div className="notes">
               <label>NOTES</label>
               <textarea maxLength="138" />
