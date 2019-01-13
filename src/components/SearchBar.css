@@ -6,16 +6,17 @@ input[type="text"] {
   background-color: #c7b86679;
   margin-right: 1rem;
   padding-left: 1rem;
-  color: rgba(56, 55, 56, 0.849);
+  color: var(--content-color);
+  font-family: var(--simple-font);
 }
 .form-button {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: rgb(70, 1, 87);
+  background-color: var(--headers-color);
   transition: background-color 0.3s;
 }
 .form-button:hover {
-  background-color: rgb(134, 17, 125);
+  background-color: var(--headers-color-dark);
 }
 
 .icon {

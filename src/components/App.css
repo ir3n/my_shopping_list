@@ -3,10 +3,10 @@
   padding-bottom: 1rem;
 }
 h1 {
-  font-family: "Permanent Marker", cursive;
+  font-family: var(--headers-font);
   font-size: 3.5rem;
   font-weight: 400;
-  color: rgb(134, 17, 125);
+  color: var(--headers-color);
 }
 .wrapper {
   width: 100%;
@@ -50,15 +50,15 @@ textarea {
   background-color: transparent;
   border: none;
   resize: none;
-  color: rgba(56, 55, 56, 0.849);
-  font-family: Kalam, cursive;
+  color: var(--content-color);
+  font-family: var(--content-font);
   font-size: 1.2rem;
   overflow: hidden;
 }
 label {
   display: block;
   padding: 6rem 0 0 7rem;
-  font-family: "Permanent Marker", cursive;
+  font-family: var(--headers-font);
   font-size: 2rem;
-  color: rgb(134, 17, 125);
+  color: var(--headers-color);
 }

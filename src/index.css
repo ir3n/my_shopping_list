@@ -1,11 +1,24 @@
 .page {
+  /* ========= VARIABLES ========== */
+  /* -COLORS- */
+  --content-color: rgba(56, 55, 56, 0.849);
+  --headers-color: rgb(134, 17, 125);
+  --headers-color-dark: rgb(92, 6, 85);
+
+  /* -FONTS- */
+  --content-font: Kalam, cursive, Candara, Arial, sans-serif;
+  --headers-font: "Permanent Marker", cursive;
+  --simple-font: Candara, sans-serif;
+
+  /* ================================ */
+
   margin: -8px;
   background-image: url(./images/halftone-yellow.png);
   overflow: hidden;
   height: 100vh;
-  font-family: Kalam, cursive, Candara, Arial, sans-serif;
+  font-family: var(--content-font);
   font-size: 1.5rem;
-  color: rgba(56, 55, 56, 0.849);
+  color: var(--content-color);
 }
 button {
   cursor: pointer;
