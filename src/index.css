@@ -3,7 +3,7 @@
   background-image: url(./images/halftone-yellow.png);
   overflow: hidden;
   height: 100vh;
-  font-family: "Patrick Hand", cursive;
+  font-family: Kalam, cursive, Candara, Arial, sans-serif;
   font-size: 1.5rem;
   color: rgba(56, 55, 56, 0.849);
 }
