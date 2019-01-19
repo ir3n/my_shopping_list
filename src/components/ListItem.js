@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import "./ListItem.css";
 
 class ListItem extends Component {
-  state = { num: 1, unit: "" };
+  state = { num: 1, unit: "", checked: false };
+
+  onCheckBtnClick = () => {
+    return this.setState({ checked: !this.state.checked });
+  };
 
   render() {
-    //console.log(this.state);
-    //console.log(this.props.groceries);
     return (
       <div>
         <input
@@ -27,7 +29,20 @@ class ListItem extends Component {
           <option value="package">cartons</option>
         </select>
 
-        {this.props.item}
+        <div className={this.state.checked ? "line-through inline" : "inline"}>
+          {this.props.item}
+        </div>
+
+        <button
+          value={this.props.item}
+          onClick={this.props.onDeleteBtnClick}
+          className="small-btn delete-btn"
+        >
+          <i className="delete icon ion-md-close" />
+        </button>
+        <button onClick={this.onCheckBtnClick} className="small-btn check-btn">
+          <i className="check icon ion-md-checkmark" />
+        </button>
       </div>
     );
   }
