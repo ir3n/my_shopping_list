@@ -19,9 +19,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container ">
         <div className="row">
-          <div className="col-6">
+          <div className="col-lg-6">
             <div className="row mt-5 mx-auto">
               <h1 className="text-uppercase mb-5 mx-auto">My Shopping List</h1>
               <div className="mx-auto">
@@ -38,7 +38,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="col-6 bg-image list-textbox">
+          <div className="col-lg-6 bg-image list-textbox">
             <List
               groceries={this.state.groceries}
               onDeleteBtnClick={this.onDeleteBtnClick}
