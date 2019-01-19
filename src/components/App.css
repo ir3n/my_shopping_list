@@ -1,52 +1,24 @@
-.row {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 h1 {
   font-family: var(--headers-font);
-  font-size: 3.5rem;
-  font-weight: 400;
+  font-size: 3rem;
   color: var(--headers-color);
 }
-.wrapper {
-  width: 100%;
-  padding: 2.5rem;
-  height: 100%;
-}
-.col2 {
-  width: 50%;
-  float: left;
-  height: 100%;
-}
-.centered {
-  text-align: center;
-}
+
 .bg-image {
   background-image: url(../images/piece-of-paper.png);
-  width: 45%;
-  height: 42rem;
   background-size: cover;
-  position: fixed;
-  top: 1rem;
-  right: 3rem;
-  display: inline-block;
+  height: 43rem;
 }
-.smaller {
-  padding: 7rem;
-}
+
 .notes {
   background-image: url(../images/post-it.png);
   background-size: cover;
-  margin-left: 5rem;
-  margin-top: 4rem;
   height: 27rem;
   width: 27rem;
 }
 textarea {
-  width: 13rem;
-  height: 9.5rem;
-  padding: 1rem;
-  text-align: left;
+  width: 15rem;
+  height: 10.5rem;
   background-color: transparent;
   border: none;
   resize: none;
@@ -54,10 +26,11 @@ textarea {
   font-family: var(--content-font);
   font-size: 1.2rem;
   overflow: hidden;
+  margin: 1rem 0 0 6.5rem;
 }
 label {
   display: block;
-  padding: 6rem 0 0 7rem;
+  padding: 6rem 0 0 13.5rem;
   font-family: var(--headers-font);
   font-size: 2rem;
   color: var(--headers-color);

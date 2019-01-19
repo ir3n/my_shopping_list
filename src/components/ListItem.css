@@ -18,3 +18,18 @@ select {
 select option {
   background-color: transparent;
 }
+.check {
+  color: green;
+}
+.delete {
+  color: red;
+}
+.bigger-hover {
+  transition: transform 0.3s;
+}
+.bigger-hover:hover {
+  transform: scale(1.1);
+}
+.line-through {
+  text-decoration: line-through;
+}

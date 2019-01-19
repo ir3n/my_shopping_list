@@ -18,26 +18,27 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
-      <div>
-        <div className="col2">
-          <div className="row centered">
-            <h1>My Shopping List</h1>
-          </div>
-          <div className="wrapper centered">
-            <SearchBar
-              onSubmit={this.onTermSubmit}
-              groceries={this.state.groceries}
-            />
-            <div className="notes">
-              <label>NOTES</label>
-              <textarea maxLength="138" />
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <div className="row mt-5 mx-auto">
+              <h1 className="text-uppercase ml-4 mb-5">My Shopping List</h1>
+              <div className="mx-auto">
+                <SearchBar
+                  onSubmit={this.onTermSubmit}
+                  groceries={this.state.groceries}
+                />
+              </div>
+              <div className="row mt-5 mx-auto">
+                <div className="notes mt-5">
+                  <label>NOTES</label>
+                  <textarea maxLength="120" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col2 bg-image">
-          <div className="wrapper smaller">
+          <div className="col-6 bg-image list-textbox">
             <List
               groceries={this.state.groceries}
               onDeleteBtnClick={this.onDeleteBtnClick}

@@ -12,7 +12,6 @@
 
   /* ================================ */
 
-  margin: -8px;
   background-image: url(./images/halftone-yellow.png);
   overflow: hidden;
   height: 100vh;
@@ -25,4 +24,16 @@ button {
   border: none;
   background-color: transparent;
   border-radius: 50%;
+  vertical-align: top;
+}
+input,
+textarea,
+select {
+  border: none;
+}
+input,
+textarea,
+button,
+select:focus {
+  outline: none;
 }

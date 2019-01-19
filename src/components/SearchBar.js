@@ -21,14 +21,15 @@ class SearchBar extends Component {
     return (
       <form onSubmit={this.onTermSubmit}>
         <input
+          className="px-3 mr-3"
           type="text"
           value={this.state.term}
           onChange={e => this.setState({ term: e.target.value })}
           placeholder="I need..."
           required
         />
-        <button className="form-button">
-          <i className="icon ion-md-arrow-round-forward" />
+        <button>
+          <i className="fas fa-arrow-circle-right arrow-icon" />
         </button>
       </form>
     );

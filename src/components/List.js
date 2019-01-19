@@ -7,7 +7,7 @@ class List extends Component {
     const groceriesList = this.props.groceries.map(item => {
       return (
         <div key={item}>
-          <span className="inline">
+          <span className="d-inline">
             <ListItem
               groceries={this.props.groceries}
               item={item}
@@ -18,10 +18,10 @@ class List extends Component {
       );
     });
     if (this.props.groceries.length === 0) {
-      return <div className="empty">Your list is empty.</div>;
+      return <div className="empty text-center mt-4">Your list is empty.</div>;
     }
 
-    return <div>{groceriesList}</div>;
+    return <div className="">{groceriesList}</div>;
   }
 }
 export default List;

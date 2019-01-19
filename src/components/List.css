@@ -1,23 +1,6 @@
 .empty {
   font-style: italic;
-  margin-left: 5.5rem;
 }
-.inline {
-  display: inline-block;
-}
-.check {
-  color: green;
-}
-.delete {
-  color: red;
-}
-.small-btn {
-  transition: transform 0.3s;
-}
-.small-btn:hover {
-  transform: scale(1.2);
-}
-
-.line-through {
-  text-decoration: line-through;
+.list-textbox {
+  padding: 8rem 5rem 3rem 6rem;
 }

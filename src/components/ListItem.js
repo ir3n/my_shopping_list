@@ -10,39 +10,42 @@ class ListItem extends Component {
 
   render() {
     return (
-      <div>
-        <input
-          type="number"
-          value={this.state.num}
-          onChange={e => this.setState({ num: e.target.value })}
-          min={1}
-          max={999}
-        />
-        <select
-          value={this.state.value}
-          onChange={e => this.setState({ unit: e.target.value })}
-        >
-          <option value="items">items</option>
-          <option value="g">g</option>
-          <option value="kg">kg</option>
-          <option value="package">packages</option>
-          <option value="package">cartons</option>
-        </select>
+      <div className="row">
+        <div className="col-9">
+          <input
+            type="number"
+            value={this.state.num}
+            onChange={e => this.setState({ num: e.target.value })}
+            min={1}
+            max={999}
+          />
+          <select
+            value={this.state.value}
+            onChange={e => this.setState({ unit: e.target.value })}
+          >
+            <option value="items">items</option>
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+            <option value="package">packages</option>
+            <option value="package">cartons</option>
+          </select>
 
-        <div className={this.state.checked ? "line-through inline" : "inline"}>
-          {this.props.item}
+          <div
+            className={
+              this.state.checked ? "line-through d-inline" : "d-inline"
+            }
+          >
+            <div className="d-inline overflow-auto">{this.props.item}</div>
+          </div>
         </div>
-
-        <button
-          value={this.props.item}
-          onClick={this.props.onDeleteBtnClick}
-          className="small-btn delete-btn"
-        >
-          <i className="delete icon ion-md-close" />
-        </button>
-        <button onClick={this.onCheckBtnClick} className="small-btn check-btn">
-          <i className="check icon ion-md-checkmark" />
-        </button>
+        <div className="col-3">
+          <button value={this.props.item} onClick={this.props.onDeleteBtnClick}>
+            <i class="far fa-times-circle delete bigger-hover" />
+          </button>
+          <button onClick={this.onCheckBtnClick}>
+            <i class="far fa-check-circle check bigger-hover" />
+          </button>
+        </div>
       </div>
     );
   }
