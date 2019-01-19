@@ -20,14 +20,16 @@ select option {
 }
 .check {
   color: green;
+  padding-left: 0.2rem;
 }
 .delete {
   color: red;
 }
-.bigger-hover {
+.small-icon {
+  font-size: 1.2rem;
   transition: transform 0.3s;
 }
-.bigger-hover:hover {
+.small-icon:hover {
   transform: scale(1.1);
 }
 .line-through {

@@ -1,6 +1,5 @@
 h1 {
   font-family: var(--headers-font);
-  font-size: 3rem;
   color: var(--headers-color);
 }
 
@@ -34,4 +33,7 @@ label {
   font-family: var(--headers-font);
   font-size: 2rem;
   color: var(--headers-color);
+}
+.list-textbox {
+  padding: 8rem 4rem 3rem 7rem;
 }

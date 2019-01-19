@@ -1,6 +1,4 @@
 .empty {
   font-style: italic;
-}
-.list-textbox {
-  padding: 8rem 5rem 3rem 6rem;
+  margin-left: -2rem;
 }

@@ -25,7 +25,9 @@ button {
   background-color: transparent;
   border-radius: 50%;
   vertical-align: top;
+  padding: 0.1rem;
 }
+
 input,
 textarea,
 select {

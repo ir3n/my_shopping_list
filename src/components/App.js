@@ -23,7 +23,7 @@ class App extends Component {
         <div className="row">
           <div className="col-6">
             <div className="row mt-5 mx-auto">
-              <h1 className="text-uppercase ml-4 mb-5">My Shopping List</h1>
+              <h1 className="text-uppercase mb-5 mx-auto">My Shopping List</h1>
               <div className="mx-auto">
                 <SearchBar
                   onSubmit={this.onTermSubmit}
