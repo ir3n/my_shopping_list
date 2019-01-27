@@ -41,11 +41,22 @@ class ListItem extends Component {
         </div>
 
         <div className="col-2 p-0">
-          <button value={this.props.item} onClick={this.props.onDeleteBtnClick}>
-            <i class="far fa-times-circle delete small-icon" />
+          <button
+            onClick={this.onCheckBtnClick}
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Purchased"
+          >
+            <i className="far fa-check-circle small-icon text-success pl-1" />
           </button>
-          <button onClick={this.onCheckBtnClick}>
-            <i class="far fa-check-circle check small-icon" />
+          <button
+            value={this.props.item}
+            onClick={this.props.onDeleteBtnClick}
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Remove from list"
+          >
+            <i className="far fa-times-circle text-danger small-icon" />
           </button>
         </div>
       </div>

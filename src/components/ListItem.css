@@ -18,13 +18,6 @@ select {
 select option {
   background-color: transparent;
 }
-.check {
-  color: green;
-  padding-left: 0.2rem;
-}
-.delete {
-  color: red;
-}
 .small-icon {
   font-size: 1.2rem;
   transition: transform 0.3s;

@@ -1,0 +1,28 @@
+.notes {
+  background-image: url(../images/post-it.png);
+  background-size: cover;
+  height: 27rem;
+  width: 27rem;
+}
+.notes-form {
+  margin: 7rem 5.4rem 0 0;
+}
+textarea {
+  width: 15rem;
+  height: 10.5rem;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: var(--content-color);
+  font-family: var(--content-font);
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+label {
+  display: block;
+  font-family: var(--headers-font);
+  font-size: 2rem;
+  color: var(--headers-color);
+}
+.notes-btn {
+}

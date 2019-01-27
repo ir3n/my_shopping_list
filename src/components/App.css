@@ -10,31 +10,11 @@ h1 {
   width: 100%;
 }
 
-.notes {
-  background-image: url(../images/post-it.png);
-  background-size: cover;
-  height: 27rem;
-  width: 27rem;
-}
-textarea {
-  width: 15rem;
-  height: 10.5rem;
-  background-color: transparent;
-  border: none;
-  resize: none;
-  color: var(--content-color);
-  font-family: var(--content-font);
-  font-size: 1.2rem;
-  overflow: hidden;
-  margin: 1rem 0 0 6.5rem;
-}
-label {
-  display: block;
-  padding: 6rem 0 0 13.5rem;
-  font-family: var(--headers-font);
-  font-size: 2rem;
-  color: var(--headers-color);
-}
 .list-textbox {
   padding: 8rem 4rem 3rem 7rem;
+}
+.btns-row {
+  position: fixed;
+  bottom: 3rem;
+  margin-left: 7rem;
 }
