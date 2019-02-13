@@ -11,7 +11,7 @@ class ListItem extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-5 p-0">
+        <div className="col-5 p-0 float-left">
           <input
             type="number"
             value={this.state.num}
@@ -26,15 +26,15 @@ class ListItem extends Component {
             <option value="items">items</option>
             <option value="g">g</option>
             <option value="kg">kg</option>
-            <option value="package">packages</option>
-            <option value="package">cartons</option>
+            <option value="packs">packs</option>
+            <option value="cartons">cartons</option>
           </select>
         </div>
         <div
           className={
             this.state.checked
-              ? "line-through d-inline col-5 p-0"
-              : "d-inline col-5 p-0 overflow-hidden"
+              ? "line-through text-truncate col-5 p-0"
+              : "text-truncate col-5 p-0"
           }
         >
           {this.props.item}

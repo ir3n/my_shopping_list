@@ -6,15 +6,24 @@ h1 {
 .bg-image {
   background-image: url(../images/piece-of-paper.png);
   background-size: cover;
-  height: 43rem;
+  background-position: center top;
+  position: relative;
+  height: 45rem;
+}
+
+.btns-row {
+  position: absolute;
+  bottom: 2rem;
   width: 100%;
 }
 
-.list-textbox {
-  padding: 8rem 4rem 3rem 7rem;
+@media (min-width: 992px) {
 }
-.btns-row {
-  position: fixed;
-  bottom: 3rem;
-  margin-left: 7rem;
+@media (min-width: 1200px) {
+  .bg-image {
+    height: 43rem;
+  }
+  .btns-row {
+    bottom: 0;
+  }
 }

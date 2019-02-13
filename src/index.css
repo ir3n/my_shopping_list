@@ -1,4 +1,4 @@
-.page {
+body {
   /* ========= VARIABLES ========== */
   /* -COLORS- */
   --content-color: rgba(56, 55, 56, 0.849);
@@ -13,11 +13,11 @@
   /* ================================ */
 
   background-image: url(./images/halftone-yellow.png);
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: var(--content-font);
   color: var(--content-color);
-  font-size: 1.5rem;
-  height: 100vh;
+  font-size: 1.3rem;
+  height: auto;
 }
 
 button {
@@ -39,4 +39,16 @@ textarea,
 button,
 select:focus {
   outline: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
 }

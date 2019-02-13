@@ -5,7 +5,7 @@
   width: 27rem;
 }
 .notes-form {
-  margin: 7rem 5.4rem 0 0;
+  margin: 7.5rem 5.4rem 0 0;
 }
 textarea {
   width: 15rem;
@@ -23,6 +23,4 @@ label {
   font-family: var(--headers-font);
   font-size: 2rem;
   color: var(--headers-color);
-}
-.notes-btn {
 }

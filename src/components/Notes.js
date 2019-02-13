@@ -20,7 +20,7 @@ class Notes extends Component {
               onChange={e => this.setState({ notes: e.target.value })}
             />
             <button className="notes-btn" type="submit">
-              <i className="fas fa-check-circle text-secondary" />
+              <i className="fas fa-check-circle text-secondary " />
             </button>
           </div>
         </form>

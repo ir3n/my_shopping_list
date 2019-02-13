@@ -10,7 +10,6 @@ select {
   background-color: transparent;
   border: none;
   margin-left: 0.5rem;
-  margin-right: 2rem;
   font-family: var(--content-font);
   font-size: 1.2rem;
   color: var(--content-color);

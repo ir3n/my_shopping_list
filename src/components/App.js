@@ -18,6 +18,7 @@ class App extends Component {
     this.setState({ groceries: newGroceries });
   };
   onClearBtnClick = () => {
+    console.log(this.state);
     this.setState({ groceries: [], notes: "" });
   };
   onNotesSubmit = text => {
@@ -26,26 +27,26 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container ">
+      <div className="container center">
         <div className="row">
           <div className="col-lg-6">
-            <div className="row justify-content-center py-lg-5 ">
+            <div className="row justify-content-center py-md-5">
               <h1 className="text-uppercase mb-5">My Shopping List</h1>
               <SearchBar
                 onSubmit={this.onTermSubmit}
                 groceries={this.state.groceries}
               />
             </div>
-            <div className="row justify-content-center pt-lg-4">
+            <div className="row row-flex justify-content-center pt-lg-4 order-3">
               <Notes onSubmit={this.onNotesSubmit} />
             </div>
           </div>
-          <div className="col-lg-6 bg-image list-textbox">
+          <div className="col-lg-6 bg-image">
             <List
               groceries={this.state.groceries}
               onDeleteBtnClick={this.onDeleteBtnClick}
             />
-            <div className="row btns-row">
+            <div className="btns-row d-flex justify-content-center">
               <button>
                 <i className="fas fa-check-circle text-success" />
               </button>

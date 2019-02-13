@@ -1,4 +1,12 @@
-.empty {
-  font-style: italic;
-  margin-left: -2rem;
+.list-textbox {
+  margin: 7rem 2rem 2rem 3.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 32rem;
+}
+
+@media (min-width: 1200px) {
+  .list-textbox {
+    margin: 8rem 3rem 3rem 4rem;
+  }
 }
