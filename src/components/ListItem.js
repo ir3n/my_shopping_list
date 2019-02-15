@@ -33,21 +33,21 @@ class ListItem extends Component {
         <div
           className={
             this.state.checked
-              ? "line-through text-truncate col-5 p-0"
-              : "text-truncate col-5 p-0"
+              ? "line-through text-truncate col-4 p-0"
+              : "text-truncate col-4 p-0"
           }
         >
           {this.props.item}
         </div>
 
-        <div className="col-2 p-0">
+        <div className="col-3">
           <button
             onClick={this.onCheckBtnClick}
             data-toggle="tooltip"
             data-placement="top"
             title="Purchased"
           >
-            <i className="far fa-check-circle small-icon text-success pl-1" />
+            <i className="far fa-check-circle small-icon text-success" />
           </button>
           <button
             value={this.props.item}

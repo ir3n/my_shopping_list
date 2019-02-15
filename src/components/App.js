@@ -27,21 +27,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container center">
+      <div className="container minimum">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-flex half-height">
             <div className="row justify-content-center py-md-5">
-              <h1 className="text-uppercase mb-5">My Shopping List</h1>
+              <h1 className="text-uppercase">My Shopping List</h1>
               <SearchBar
                 onSubmit={this.onTermSubmit}
                 groceries={this.state.groceries}
               />
             </div>
-            <div className="row row-flex justify-content-center pt-lg-4 order-3">
-              <Notes onSubmit={this.onNotesSubmit} />
-            </div>
           </div>
-          <div className="col-lg-6 bg-image">
+          <div className="col-lg-6 col-flex bg-image">
             <List
               groceries={this.state.groceries}
               onDeleteBtnClick={this.onDeleteBtnClick}
@@ -54,6 +51,9 @@ class App extends Component {
                 <i className="fas fa-times-circle ml-2 text-danger" />
               </button>
             </div>
+          </div>
+          <div className="col-lg-6 col-flex notes-absolute">
+            <Notes onSubmit={this.onNotesSubmit} />
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ class SearchBar extends Component {
     return (
       <form onSubmit={this.onTermSubmit}>
         <input
-          className="px-3 mr-3"
+          className="px-3 mr-1"
           type="text"
           value={this.state.term}
           onChange={e => this.setState({ term: e.target.value })}

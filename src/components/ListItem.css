@@ -3,7 +3,6 @@ input[type="number"] {
   background-color: transparent;
   border: none;
   font-family: var(--content-font);
-  font-size: 1.2rem;
   color: var(--content-color);
 }
 select {
@@ -11,7 +10,6 @@ select {
   border: none;
   margin-left: 0.5rem;
   font-family: var(--content-font);
-  font-size: 1.2rem;
   color: var(--content-color);
 }
 select option {

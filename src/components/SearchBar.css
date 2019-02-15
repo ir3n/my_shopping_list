@@ -1,5 +1,5 @@
 input[type="text"] {
-  width: 15rem;
+  width: 14rem;
   height: 2.5rem;
   border-radius: 13px;
   background-color: #c7b86679;
@@ -8,7 +8,7 @@ input[type="text"] {
   font-size: 1.2rem;
 }
 .arrow-icon {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   color: var(--headers-color);
   transition: color 0.3s;
 }

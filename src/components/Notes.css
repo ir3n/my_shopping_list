@@ -1,26 +1,46 @@
 .notes {
   background-image: url(../images/post-it.png);
   background-size: cover;
-  height: 27rem;
-  width: 27rem;
+  height: 20rem;
+  width: 20rem;
+  margin: 0 auto;
 }
 .notes-form {
-  margin: 7.5rem 5.4rem 0 0;
+  padding: 5rem 4rem 0 0;
 }
 textarea {
-  width: 15rem;
-  height: 10.5rem;
-  background-color: transparent;
+  width: 11rem;
+  height: 8rem;
+  background-color: cyan;
   border: none;
   resize: none;
   color: var(--content-color);
   font-family: var(--content-font);
-  font-size: 1.2rem;
-  overflow: hidden;
+  overflow: auto;
+  line-height: 1;
 }
 label {
   display: block;
   font-family: var(--headers-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--headers-color);
+}
+
+@media (min-width: 576px) {
+  .notes {
+    height: 25rem;
+    width: 25rem;
+  }
+  .notes-form {
+    padding: 7rem 4rem 0 0;
+  }
+  textarea {
+    width: 15rem;
+    height: 9.5rem;
+  }
+  label {
+    font-size: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
 }

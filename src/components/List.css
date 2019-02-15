@@ -1,10 +1,23 @@
 .list-textbox {
-  margin: 7rem 2rem 2rem 3.5rem;
-  overflow-y: scroll;
   overflow-x: hidden;
-  height: 32rem;
+  padding: 3rem 0;
+  max-width: 25rem;
+  margin: 0 auto;
 }
 
+@media (min-width: 576px) {
+  .list-textbox {
+    max-width: 30rem;
+  }
+}
+@media (min-width: 992px) {
+  .list-textbox {
+    margin: 7rem 2rem 2rem 3.5rem;
+    height: 32rem;
+    overflow-y: auto;
+    padding-top: 0;
+  }
+}
 @media (min-width: 1200px) {
   .list-textbox {
     margin: 8rem 3rem 3rem 4rem;

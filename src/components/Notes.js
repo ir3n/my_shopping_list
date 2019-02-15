@@ -10,12 +10,12 @@ class Notes extends Component {
   };
   render() {
     return (
-      <div className="notes mt-5">
+      <div className="notes mt-4">
         <form className="notes-form" onSubmit={this.onNotesSubmit}>
-          <label className="text-uppercase text-right mr-3">notes</label>
+          <label className="text-uppercase text-right">notes</label>
           <div className="row align-items-end justify-content-end">
             <textarea
-              maxLength="120"
+              maxLength="200"
               value={this.state.notes}
               onChange={e => this.setState({ notes: e.target.value })}
             />
