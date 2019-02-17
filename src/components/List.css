@@ -1,6 +1,6 @@
 .list-textbox {
   overflow-x: hidden;
-  padding: 3rem 0;
+  padding: 2rem 0;
   max-width: 25rem;
   margin: 0 auto;
 }
@@ -10,16 +10,22 @@
     max-width: 30rem;
   }
 }
+@media (min-width: 768px) {
+  .list-textbox {
+    padding-top: 0;
+  }
+}
 @media (min-width: 992px) {
   .list-textbox {
-    margin: 7rem 2rem 2rem 3.5rem;
-    height: 32rem;
+    margin: 6rem 2rem 0 3.5rem;
+    height: 33rem;
     overflow-y: auto;
-    padding-top: 0;
+    padding: 0 1rem;
   }
 }
 @media (min-width: 1200px) {
   .list-textbox {
-    margin: 8rem 3rem 3rem 4rem;
+    margin: 6rem 3rem 0 4rem;
+    padding-bottom: 1rem;
   }
 }

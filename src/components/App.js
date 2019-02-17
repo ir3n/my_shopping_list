@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SimpleStorage from "react-simple-storage";
 import SearchBar from "./SearchBar";
 import List from "./List";
 import Notes from "./Notes";
@@ -9,6 +10,7 @@ class App extends Component {
 
   onTermSubmit = term => {
     this.setState({ groceries: [...this.state.groceries, term] });
+    console.log(this.state);
   };
   onDeleteBtnClick = e => {
     const clickedItem = e.target.parentElement.value;
@@ -23,11 +25,13 @@ class App extends Component {
   };
   onNotesSubmit = text => {
     this.setState({ notes: text });
+    console.log(this.state);
   };
 
   render() {
     return (
       <div className="container minimum">
+        <SimpleStorage parent={this} />
         <div className="row">
           <div className="col-lg-6 col-flex half-height">
             <div className="row justify-content-center py-md-5">
@@ -52,7 +56,7 @@ class App extends Component {
               </button>
             </div>
           </div>
-          <div className="col-lg-6 col-flex notes-absolute">
+          <div className="col-lg-6 col-flex notes-absolute ">
             <Notes onSubmit={this.onNotesSubmit} />
           </div>
         </div>

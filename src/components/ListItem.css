@@ -8,9 +8,9 @@ input[type="number"] {
 select {
   background-color: transparent;
   border: none;
-  margin-left: 0.5rem;
   font-family: var(--content-font);
   color: var(--content-color);
+  position: absolute;
 }
 select option {
   background-color: transparent;

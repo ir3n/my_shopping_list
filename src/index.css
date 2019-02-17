@@ -36,7 +36,8 @@ select {
 input,
 textarea,
 button,
-select:focus {
+select:focus,
+button:focus {
   outline: none;
 }
 
