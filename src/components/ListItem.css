@@ -1,20 +1,3 @@
-input[type="number"] {
-  width: 2.5rem;
-  background-color: transparent;
-  border: none;
-  font-family: var(--content-font);
-  color: var(--content-color);
-}
-select {
-  background-color: transparent;
-  border: none;
-  font-family: var(--content-font);
-  color: var(--content-color);
-  position: absolute;
-}
-select option {
-  background-color: transparent;
-}
 .small-icon {
   font-size: 1.2rem;
   transition: transform 0.3s;

@@ -13,7 +13,6 @@ h1 {
   min-width: 320px;
 }
 .bg-image {
-  background-size: cover;
   height: auto;
   position: relative;
   padding: 0;
@@ -47,8 +46,8 @@ h1 {
 @media (min-width: 992px) {
   .bg-image {
     background-image: url(../images/piece-of-paper.png);
-    background-position: center top;
-    height: 45rem;
+    background-size: cover;
+    height: 43rem;
   }
   .btns-row {
     position: absolute;
@@ -61,11 +60,8 @@ h1 {
   }
 }
 @media (min-width: 1200px) {
-  .bg-image {
-    height: 43rem;
-  }
   .btns-row {
-    bottom: 0;
+    bottom: 1rem;
   }
   .notes-absolute {
     left: 4rem;

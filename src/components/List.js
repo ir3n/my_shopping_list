@@ -6,9 +6,8 @@ class List extends Component {
   render() {
     const groceriesList = this.props.groceries.map(item => {
       return (
-        <div key={item} className="d-inline">
+        <div key={item}>
           <ListItem
-            groceries={this.props.groceries}
             item={item}
             onDeleteBtnClick={this.props.onDeleteBtnClick}
           />

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SimpleStorage from "react-simple-storage";
 import "./Notes.css";
 
 class Notes extends Component {
@@ -11,6 +12,7 @@ class Notes extends Component {
   render() {
     return (
       <div className="notes mt-4">
+        <SimpleStorage parent={this} />
         <form className="notes-form" onSubmit={this.onNotesSubmit}>
           <label className="text-uppercase text-right">notes</label>
           <div className="row align-items-end justify-content-end">
