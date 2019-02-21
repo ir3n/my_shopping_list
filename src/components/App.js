@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SimpleStorage from "react-simple-storage";
+import SimpleStorage, { clearStorage } from "react-simple-storage";
 import SearchBar from "./SearchBar";
 import List from "./List";
 import Notes from "./Notes";
@@ -22,8 +22,9 @@ class App extends Component {
   onClearBtnClick = () => {
     console.log(this.state);
     this.setState({ groceries: [], notes: "" });
+    clearStorage();
   };
-  onNotesSubmit = text => {
+  changeStateNotes = text => {
     this.setState({ notes: text });
     console.log(this.state);
   };
@@ -57,7 +58,7 @@ class App extends Component {
             </div>
           </div>
           <div className="col-lg-6 col-flex notes-absolute ">
-            <Notes onSubmit={this.onNotesSubmit} />
+            <Notes onSubmit={this.changeStateNotes} text={this.state.notes} />
           </div>
         </div>
       </div>

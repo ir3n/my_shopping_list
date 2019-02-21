@@ -1,25 +1,25 @@
 import React, { Component } from "react";
-import SimpleStorage from "react-simple-storage";
+
 import "./Notes.css";
 
 class Notes extends Component {
-  state = { notes: "" };
+  state = { text: "" };
 
   onNotesSubmit = e => {
     e.preventDefault();
-    this.props.onSubmit(this.state.notes);
+    this.props.onSubmit(this.state.text);
   };
+
   render() {
     return (
       <div className="notes mt-4">
-        <SimpleStorage parent={this} />
         <form className="notes-form" onSubmit={this.onNotesSubmit}>
           <label className="text-uppercase text-right">notes</label>
           <div className="row align-items-end justify-content-end">
             <textarea
               maxLength="200"
-              value={this.state.notes}
-              onChange={e => this.setState({ notes: e.target.value })}
+              value={this.props.text ? this.props.text : this.state.text}
+              onChange={e => this.setState({ text: e.target.value })}
             />
             <button className="notes-btn" type="submit">
               <i className="fas fa-check-circle text-secondary " />
