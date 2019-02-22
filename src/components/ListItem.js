@@ -4,25 +4,35 @@ import "./ListItem.css";
 class ListItem extends Component {
   state = { checked: false };
 
-  onCheckBtnClick = () => {
-    return this.setState({ checked: !this.state.checked });
+  componentWillUnmount = () => {
+    localStorage.clear();
+  };
+  onCheckBtnClick = item => {
+    this.setState({ checked: !this.state.checked });
+    localStorage.setItem(`${item}`, `${!this.state.checked}`);
+    console.log(localStorage);
+  };
+
+  chooseClass = item => {
+    const storage = JSON.parse(localStorage.getItem(`${item}`));
+    console.log(storage);
+    if (storage) {
+      return "line-through text-truncate col-8";
+    } else {
+      return "text-truncate col-8";
+    }
   };
 
   render() {
     return (
       <div className="row px-2 px-lg-3">
-        <div
-          className={
-            this.state.checked
-              ? "line-through text-truncate col-8"
-              : "text-truncate col-8"
-          }
-        >
+        <div className={this.chooseClass(this.props.item)}>
           {this.props.item}
         </div>
         <div className="col-4 text-right">
           <button
-            onClick={this.onCheckBtnClick}
+            value={this.props.item}
+            onClick={() => this.onCheckBtnClick(this.props.item)}
             data-toggle="tooltip"
             data-placement="top"
             title="Purchased"
