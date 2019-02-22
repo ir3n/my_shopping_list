@@ -48,12 +48,10 @@ class App extends Component {
               groceries={this.state.groceries}
               onDeleteBtnClick={this.onDeleteBtnClick}
             />
-            <div className="btns-row d-flex justify-content-center">
-              <button>
-                <i className="fas fa-check-circle text-success" />
-              </button>
-              <button onClick={this.onClearBtnClick}>
-                <i className="fas fa-times-circle ml-2 text-danger" />
+            <div className="btn-row d-flex justify-content-center">
+              <button onClick={this.onClearBtnClick} className="clear-btn">
+                <i className="fas fa-times" />
+                <div>Clear List</div>
               </button>
             </div>
           </div>

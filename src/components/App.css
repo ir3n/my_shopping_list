@@ -17,9 +17,27 @@ h1 {
   position: relative;
   padding: 0;
 }
-
-.btns-row {
+.btn-row {
   width: 100%;
+}
+.clear-btn {
+  background-color: var(--headers-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem 0.3rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.clear-btn:hover {
+  background-color: var(--headers-color-dark);
+}
+.clear-btn i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
 }
 .half-height {
   height: 50%;
@@ -47,7 +65,7 @@ h1 {
   .bg-image {
     background-image: url(../images/piece-of-paper.png);
     background-size: cover;
-    height: 43rem;
+    height: 43.5rem;
   }
   .btns-row {
     position: absolute;
@@ -61,7 +79,7 @@ h1 {
 }
 @media (min-width: 1200px) {
   .btns-row {
-    bottom: 1rem;
+    bottom: 0;
   }
   .notes-absolute {
     left: 4rem;

@@ -1,9 +1,22 @@
 .small-icon {
-  font-size: 1.2rem;
-  transition: transform 0.3s;
+  font-size: 1rem;
+  transition: all 0.3s;
 }
 .small-icon:hover {
   transform: scale(1.1);
+}
+.check-btn {
+  color: var(--bg-color);
+  margin-right: 0.5rem;
+}
+.check-btn:hover {
+  color: #1abc9c;
+}
+.delete-icon {
+  color: var(--headers-color-dark);
+}
+.delete-icon:hover {
+  color: var(--headers-color);
 }
 .line-through {
   text-decoration: line-through;

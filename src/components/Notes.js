@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./Notes.css";
 
 class Notes extends Component {
@@ -21,8 +20,13 @@ class Notes extends Component {
               value={this.props.text ? this.props.text : this.state.text}
               onChange={e => this.setState({ text: e.target.value })}
             />
-            <button className="notes-btn" type="submit">
-              <i className="fas fa-check-circle text-secondary " />
+            <button
+              type="submit"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Save Notes"
+            >
+              <i className="fas fa-check notes-btn" />
             </button>
           </div>
         </form>

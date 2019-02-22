@@ -6,7 +6,7 @@ class List extends Component {
   render() {
     const groceriesList = this.props.groceries.map(item => {
       return (
-        <div key={item}>
+        <div key={item} className="item-highlight">
           <ListItem
             item={item}
             onDeleteBtnClick={this.props.onDeleteBtnClick}

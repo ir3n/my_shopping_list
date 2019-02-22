@@ -6,12 +6,12 @@
   margin: 0 auto;
 }
 .notes-form {
-  padding: 5rem 4rem 0 0;
+  padding: 5rem 4.5rem 0 0;
 }
 textarea {
-  width: 11rem;
-  height: 8rem;
-  background-color: cyan;
+  width: 10.5rem;
+  height: 7.5rem;
+  background-color: transparent;
   border: none;
   resize: none;
   color: var(--content-color);
@@ -25,6 +25,14 @@ label {
   font-size: 1.5rem;
   color: var(--headers-color);
 }
+.notes-btn {
+  color: var(--headers-color);
+  transition: all 0.3s;
+}
+.notes-btn:hover {
+  color: var(--headers-color-dark);
+  transform: scale(1.1);
+}
 
 @media (min-width: 576px) {
   .notes {
@@ -32,10 +40,10 @@ label {
     width: 25rem;
   }
   .notes-form {
-    padding: 7rem 4rem 0 0;
+    padding: 6.5rem 5.5rem 0 0;
   }
   textarea {
-    width: 15rem;
+    width: 13rem;
     height: 9.5rem;
   }
   label {

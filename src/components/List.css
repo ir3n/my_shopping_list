@@ -1,30 +1,44 @@
 .list-textbox {
   overflow-x: hidden;
-  padding: 2rem;
-  max-width: 20rem;
-  margin: 0 auto;
+  padding: 1.5rem 0;
+  max-width: 17.5rem;
+  margin: 1rem auto;
+  background-color: #ecf0f1da;
+  border-radius: 20px;
+}
+.item-highlight {
+  transition: all 0.3s;
+}
+.item-highlight:hover {
+  background-color: #bdc3c7;
 }
 
 @media (min-width: 576px) {
   .list-textbox {
     max-width: 25rem;
+    line-height: 1.9;
+    margin-top: 0;
   }
 }
-@media (min-width: 768px) {
-  .list-textbox {
-    padding-top: 0;
-  }
-}
+
 @media (min-width: 992px) {
   .list-textbox {
-    height: 35rem;
+    height: 34rem;
+    max-width: 33rem;
     margin-top: 2rem;
-    padding: 4rem;
+    margin-left: 2rem;
+    padding: 4rem 5rem;
     padding-bottom: 0;
     overflow-y: auto;
+    background-color: transparent;
+  }
+  .item-highlight:hover {
+    background-color: #ecf0f1;
   }
 }
 @media (min-width: 1200px) {
   .list-textbox {
+    height: 36rem;
+    margin-top: 1rem;
   }
 }

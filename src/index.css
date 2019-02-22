@@ -1,9 +1,11 @@
 body {
   /* ========= VARIABLES ========== */
   /* -COLORS- */
-  --content-color: rgba(56, 55, 56, 0.849);
-  --headers-color: rgb(134, 17, 125);
-  --headers-color-dark: rgb(92, 6, 85);
+  --content-color: #214346;
+  --headers-color: #d38900;
+  --headers-color-dark: #d35400;
+  --bg-color: #006266;
+  --input-color: #ecf0f1a1;
 
   /* -FONTS- */
   --content-font: Kalam, cursive, Candara, Arial, sans-serif;
@@ -12,7 +14,7 @@ body {
 
   /* ================================ */
 
-  background-image: url(./images/halftone-yellow.png);
+  background-color: var(--bg-color);
   overflow-x: hidden;
   font-family: var(--content-font);
   color: var(--content-color);

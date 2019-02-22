@@ -2,7 +2,7 @@ input[type="text"] {
   width: 14rem;
   height: 2.5rem;
   border-radius: 13px;
-  background-color: #c7b86679;
+  background-color: var(--input-color);
   color: var(--content-color);
   font-family: var(--simple-font);
   font-size: 1.2rem;

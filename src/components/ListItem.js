@@ -25,7 +25,7 @@ class ListItem extends Component {
 
   render() {
     return (
-      <div className="row px-2 px-lg-3">
+      <div className="row px-3 px-md-4 align-items-center">
         <div className={this.chooseClass(this.props.item)}>
           {this.props.item}
         </div>
@@ -37,7 +37,7 @@ class ListItem extends Component {
             data-placement="top"
             title="Purchased"
           >
-            <i className="far fa-check-circle small-icon text-success" />
+            <i className="fas fa-check small-icon check-btn" />
           </button>
           <button
             value={this.props.item}
@@ -46,7 +46,7 @@ class ListItem extends Component {
             data-placement="bottom"
             title="Remove from list"
           >
-            <i className="far fa-times-circle text-danger small-icon" />
+            <i className="fas fa-trash-alt small-icon delete-icon" />
           </button>
         </div>
       </div>
