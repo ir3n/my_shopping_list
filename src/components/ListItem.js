@@ -2,21 +2,32 @@ import React, { Component } from "react";
 import "./ListItem.css";
 
 class ListItem extends Component {
-  state = { checked: false };
+  constructor(props) {
+    super(props);
+    this.state = { checked: false };
+
+    //if there is state saved in the localStorage, initialize it with that.
+    if (this.readStorage(this.props.item) !== null) {
+      this.state = { checked: this.readStorage(this.props.item) };
+    }
+  }
 
   componentWillUnmount = () => {
     localStorage.clear();
   };
+  persistData = item => {
+    localStorage.setItem(`${item}`, JSON.stringify(!this.state.checked));
+  };
+  readStorage = item => {
+    return JSON.parse(localStorage.getItem(`${item}`));
+  };
   onCheckBtnClick = item => {
+    this.persistData(item);
     this.setState({ checked: !this.state.checked });
-    localStorage.setItem(`${item}`, `${!this.state.checked}`);
-    console.log(localStorage);
   };
 
   chooseClass = item => {
-    const storage = JSON.parse(localStorage.getItem(`${item}`));
-    console.log(storage);
-    if (storage) {
+    if (this.readStorage(item)) {
       return "line-through text-truncate col-8";
     } else {
       return "text-truncate col-8";
