@@ -4,6 +4,14 @@ import "./Notes.css";
 class Notes extends Component {
   state = { text: "" };
 
+  componentDidMount() {
+    if (JSON.parse(localStorage.getItem("_notes"))) {
+      this.setState({ text: JSON.parse(localStorage.getItem("_notes")) });
+    }
+  }
+  componentWillReceiveProps = ({ text }) => {
+    this.setState({ ...this.state.text, text });
+  };
   onNotesSubmit = e => {
     e.preventDefault();
     this.props.onSubmit(this.state.text);
@@ -17,7 +25,7 @@ class Notes extends Component {
           <div className="row align-items-end justify-content-end">
             <textarea
               maxLength="200"
-              value={this.props.text ? this.props.text : this.state.text}
+              value={this.state.text}
               onChange={e => this.setState({ text: e.target.value })}
             />
             <button

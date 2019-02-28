@@ -12,9 +12,9 @@ class ListItem extends Component {
     }
   }
 
-  componentWillUnmount = () => {
-    localStorage.clear();
-  };
+  // componentWillUnmount = () => {
+  //   localStorage.clear();
+  // };
   persistData = item => {
     localStorage.setItem(`${item}`, JSON.stringify(!this.state.checked));
   };

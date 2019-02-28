@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SimpleStorage, { clearStorage } from "react-simple-storage";
+import SimpleStorage from "react-simple-storage";
 import SearchBar from "./SearchBar";
 import List from "./List";
 import Notes from "./Notes";
@@ -20,13 +20,11 @@ class App extends Component {
     this.setState({ groceries: newGroceries });
   };
   onClearBtnClick = () => {
-    console.log(this.state);
     this.setState({ groceries: [], notes: "" });
-    clearStorage();
+    localStorage.clear();
   };
   changeStateNotes = text => {
     this.setState({ notes: text });
-    console.log(this.state);
   };
 
   render() {
@@ -56,7 +54,11 @@ class App extends Component {
             </div>
           </div>
           <div className="col-lg-6 col-flex notes-absolute ">
-            <Notes onSubmit={this.changeStateNotes} text={this.state.notes} />
+            <Notes
+              onSubmit={this.changeStateNotes}
+              onChange={this.changeStateNotes}
+              text={this.state.notes}
+            />
           </div>
         </div>
       </div>
