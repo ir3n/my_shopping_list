@@ -1,3 +1,23 @@
+# My Shopping List :heavy_check_mark:
+This is a responsive shopping list, made with React.js and Bootstrap 4.
+
+## Features
+- Responsive
+- Delete button
+- Check button for purchased items
+- Notes
+- List is saved in localStorage
+- Clear button
+
+## Screenshots
+<img src="https://github.com/ir3n/my_shopping_list/blob/master/screenshots/shopping-list-screenshot-lg.jpg" width="600px" />
+<img src="https://github.com/ir3n/my_shopping_list/blob/master/screenshots/shopping-list- screenshot-mobile.jpg" width="200px" />
+
+
+I found the notes clipart [here](https://www.kissclipart.com/sticky-notes-icon-clipart-post-it-note-adhesive-ta-p3qa3p/) .
+And [here](http://clipart-library.com/clipart/gieonkXkT.htm) is the paper png.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
